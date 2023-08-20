@@ -32,6 +32,7 @@ brew 'curlie'
 brew 'htop'
 brew 'dasel'
 brew 'tmux'
+brew 'fzf'
 
 # Docker
 brew 'lazydocker'
