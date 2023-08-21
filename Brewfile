@@ -15,7 +15,7 @@ brew 'golangci-lint'
 brew 'goreleaser'
 
 # Node
-brew 'node'
+brew 'nvm'
 
 # Build tools
 brew 'go-task'
