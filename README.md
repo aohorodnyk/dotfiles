@@ -22,3 +22,9 @@ git branch -m master main
 git remote add origin git@github.com:aohorodnyk/dotfiles.git
 git pull --set-upstream origin main
 ```
+
+## Apply changes to the system
+
+```bash
+chezmoi apply
+```
