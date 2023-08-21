@@ -27,8 +27,7 @@ brew 'lazygit'
 # Tools
 brew 'ripgrep'
 brew 'curlie'
-
-# System
+brew 'rclone'
 brew 'htop'
 brew 'dasel'
 brew 'tmux'
