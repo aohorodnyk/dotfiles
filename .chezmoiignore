@@ -1,3 +1,6 @@
 Brewignore
+Brewfile
 Brewfile.lock.json
 README.md
+run_before_install-applications.sh
+run_before_install-packages.sh
