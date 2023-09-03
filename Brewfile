@@ -35,3 +35,7 @@ brew 'fzf'
 
 # Docker
 brew 'lazydocker'
+
+# Casks
+cask 'font-jetbrains-mono'
+cask 'wireshark'
