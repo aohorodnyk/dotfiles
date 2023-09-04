@@ -32,9 +32,13 @@ brew 'htop'
 brew 'dasel'
 brew 'tmux'
 brew 'fzf'
+brew 'gping'
+brew 'duf'
+brew 'hurl'
 
 # Docker
 brew 'lazydocker'
+brew 'dive'
 
 # Casks
 cask 'font-jetbrains-mono'
