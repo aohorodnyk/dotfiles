@@ -41,5 +41,8 @@ brew 'lazydocker'
 brew 'dive'
 
 # Casks
-cask 'font-jetbrains-mono'
 cask 'wireshark'
+
+# Fonts
+tap 'homebrew/cask-fonts'
+cask 'font-jetbrains-mono'
