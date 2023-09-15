@@ -14,6 +14,9 @@ brew 'go'
 brew 'golangci-lint'
 brew 'goreleaser'
 
+# Rust
+brew 'rust'
+
 # Node
 brew 'nvm'
 
