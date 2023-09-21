@@ -49,3 +49,6 @@ cask 'wireshark'
 # Fonts
 tap 'homebrew/cask-fonts'
 cask 'font-jetbrains-mono'
+
+# Media
+cask 'vlc'
