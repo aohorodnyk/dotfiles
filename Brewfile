@@ -1,6 +1,3 @@
-# Dotfiles
-brew 'chezmoi'
-
 # Fish
 brew 'fish'
 brew 'fisher'
@@ -14,9 +11,6 @@ brew 'go'
 brew 'golangci-lint'
 brew 'goreleaser'
 
-# Rust
-brew 'rust'
-
 # Node
 brew 'nvm'
 
@@ -28,8 +22,9 @@ brew 'git'
 brew 'lazygit'
 
 # Tools
-brew 'ripgrep'
+brew 'curl'
 brew 'curlie'
+brew 'ripgrep'
 brew 'rclone'
 brew 'htop'
 brew 'dasel'
@@ -39,16 +34,6 @@ brew 'gping'
 brew 'duf'
 brew 'hurl'
 
-# Docker
-brew 'lazydocker'
-brew 'dive'
-
-# Casks
-cask 'wireshark'
-
 # Fonts
 tap 'homebrew/cask-fonts'
 cask 'font-jetbrains-mono'
-
-# Media
-cask 'vlc'
