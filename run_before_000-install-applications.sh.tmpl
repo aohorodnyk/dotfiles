@@ -1,0 +1,7 @@
+#!/usr/bin/env zsh
+
+# For other OS can be added later on.
+{{ if eq .chezmoi.os "darwin" }}
+  echo "Installing applications from Brewfile..."
+  brew bundle --file="$(chezmoi source-path)/Brewfile"
+{{ end }}
