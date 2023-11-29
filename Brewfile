@@ -6,6 +6,9 @@ brew 'fisher'
 brew 'tree'
 brew 'bat'
 
+# Static site generator
+brew 'hugo'
+
 # Go
 brew 'go'
 brew 'golangci-lint'
