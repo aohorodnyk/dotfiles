@@ -2,6 +2,10 @@
 brew 'fish'
 brew 'fisher'
 
+# Python
+brew 'pyenv'
+brew 'poetry'
+
 # File system
 brew 'tree'
 brew 'bat'
