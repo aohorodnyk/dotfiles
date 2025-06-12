@@ -34,7 +34,6 @@ brew 'duf'
 brew 'hurl'
 
 # Fonts
-tap 'homebrew/cask-fonts'
 cask 'font-jetbrains-mono'
 
 # Terminal
