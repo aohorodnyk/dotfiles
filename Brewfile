@@ -2,10 +2,6 @@
 brew 'fish'
 brew 'fisher'
 
-# Python
-brew 'pyenv'
-brew 'poetry'
-
 # File system
 brew 'tree'
 brew 'bat'
@@ -16,7 +12,6 @@ brew 'hugo'
 # Go
 brew 'go'
 brew 'golangci-lint'
-brew 'goreleaser'
 
 # Node
 brew 'nvm'
@@ -26,13 +21,10 @@ brew 'go-task'
 
 # Git
 brew 'git'
-brew 'lazygit'
 
 # Tools
 brew 'curl'
-brew 'curlie'
 brew 'ripgrep'
-brew 'rclone'
 brew 'htop'
 brew 'dasel'
 brew 'tmux'
