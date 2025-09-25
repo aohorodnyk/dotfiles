@@ -1,3 +1,3 @@
 #!/usr/bin/env fish
 
-fisher install jethrokuan/fzf
+fisher install PatrickF1/fzf.fish
