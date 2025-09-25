@@ -34,6 +34,7 @@ brew 'duf'
 brew 'hurl'
 brew 'zoxide'
 brew 'fd'
+brew 'xh'
 
 # Fonts
 cask 'font-jetbrains-mono'
