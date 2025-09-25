@@ -32,6 +32,7 @@ brew 'fzf'
 brew 'gping'
 brew 'duf'
 brew 'hurl'
+brew 'zoxide'
 
 # Fonts
 cask 'font-jetbrains-mono'
