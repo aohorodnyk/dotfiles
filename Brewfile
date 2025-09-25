@@ -14,7 +14,7 @@ brew 'go'
 brew 'golangci-lint'
 
 # Node
-brew 'nvm'
+brew 'fnm'
 
 # Build tools
 brew 'go-task'
@@ -35,6 +35,3 @@ brew 'hurl'
 
 # Fonts
 cask 'font-jetbrains-mono'
-
-# Terminal
-cask 'ghostty'
