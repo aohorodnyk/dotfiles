@@ -36,7 +36,8 @@ brew 'zoxide'
 brew 'fd'
 brew 'xh'
 brew 'lsd'
+brew 'watchexec'
 
 # Fonts
 cask 'font-jetbrains-mono'
-cask 'font-jetbrains-mono'
+cask 'font-jetbrains-mono-nerd-font'
