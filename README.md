@@ -28,3 +28,7 @@ git pull --set-upstream origin main
 ```bash
 chezmoi apply
 ```
+
+## Fish shell
+
+Fish theme: `fisher install IlanCosman/tide@v6`.

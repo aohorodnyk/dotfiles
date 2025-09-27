@@ -35,6 +35,8 @@ brew 'hurl'
 brew 'zoxide'
 brew 'fd'
 brew 'xh'
+brew 'lsd'
 
 # Fonts
+cask 'font-jetbrains-mono'
 cask 'font-jetbrains-mono'

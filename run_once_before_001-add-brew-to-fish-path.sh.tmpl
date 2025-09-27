@@ -3,5 +3,5 @@
 # This is needed only for darwin.
 {{ if eq .chezmoi.os "darwin" }}
   echo "Adding brew to fish path..."
-  fish_add_path "/opt/homebrew/bin"
+  fish_add_path "/opt/homebrew/bin" | true
 {{ end }}
