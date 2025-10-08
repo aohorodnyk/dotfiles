@@ -16,11 +16,7 @@ brew install chezmoi
 ### Init chezmoi
 
 ```bash
-chezmoi init
-chezmoi cd
-git branch -m master main
-git remote add origin git@github.com:aohorodnyk/dotfiles.git
-git pull --set-upstream origin main
+chezmoi init git@github.com:aohorodnyk/dotfiles.git
 ```
 
 ## Apply changes to the system
