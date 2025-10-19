@@ -38,6 +38,10 @@ brew 'xh'
 brew 'lsd'
 brew 'watchexec'
 
+# TUI
+brew 'lazygit'
+brew 'lazydocker'
+
 # Fonts
 cask 'font-jetbrains-mono'
 cask 'font-jetbrains-mono-nerd-font'
