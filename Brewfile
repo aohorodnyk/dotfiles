@@ -42,6 +42,9 @@ brew 'watchexec'
 brew 'lazygit'
 brew 'lazydocker'
 
+# Editor
+cask 'zed'
+
 # Fonts
 cask 'font-jetbrains-mono'
 cask 'font-jetbrains-mono-nerd-font'
