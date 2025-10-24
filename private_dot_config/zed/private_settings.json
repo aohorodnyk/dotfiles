@@ -7,6 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "confirm_quit": true,
   "calls": {
     "mute_on_join": true,
     "share_on_join": false
@@ -16,7 +21,6 @@
   "terminal": {
     "font_family": "JetBrainsMono Nerd Font Mono"
   },
-  "confirm_quit": true,
   "git_panel": {
     "dock": "left"
   },
