@@ -25,6 +25,10 @@ chezmoi init git@github.com:aohorodnyk/dotfiles.git
 chezmoi apply
 ```
 
-## Fish shell
 
-Fish theme: `fisher install IlanCosman/tide@v6`.
+# List of useful applications
+
+- [Ghostty](https://ghostty.org/) - Terminal
+- [Zed](https://zed.dev/) - Code editor
+- [Visual Studio Code](https://code.visualstudio.com/) - Code editor
+- [Yaak](https://yaak.app/) - API client
