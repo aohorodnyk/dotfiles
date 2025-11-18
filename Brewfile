@@ -15,7 +15,6 @@ brew 'golangci-lint'
 
 # Node
 brew 'fnm'
-brew 'biome'
 
 # Build tools
 brew 'go-task'
