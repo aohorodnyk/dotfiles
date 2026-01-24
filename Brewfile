@@ -1,3 +1,6 @@
+# Env management
+brew 'mise'
+
 # Fish
 brew 'fish'
 brew 'fisher'
