@@ -20,6 +20,4 @@ sudo apt-get update
 sudo apt-get install -y mise
 
 echo 'mise activate fish | source' > ~/.config/fish/conf.d/fzf.fish
-{{- else if .is_windows -}}
-winget install jdx.mise
 {{- end -}}
