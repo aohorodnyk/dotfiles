@@ -1,0 +1,18 @@
+{{- if .is_darwin -}}
+#!/usr/bin/env sh
+
+echo "Changing shell to fish..."
+
+FISH_SHELL_PATH=$(which fish)
+
+echo $FISH_SHELL_PATH | sudo tee -a /etc/shells
+chsh -s $FISH_SHELL_PATH
+{{- else if .is_debian_like -}}
+#!/usr/bin/env sh
+
+echo "Changing shell to fish..."
+
+FISH_SHELL_PATH=$(which fish)
+
+chsh -s $FISH_SHELL_PATH
+{{- end -}}

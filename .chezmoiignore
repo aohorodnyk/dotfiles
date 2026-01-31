@@ -1,6 +1,2 @@
-Brewignore
-Brewfile
-Brewfile.lock.json
-README.md
+*.md
 LICENSE
-run_*

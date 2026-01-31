@@ -1,14 +1,14 @@
-{{ if .is_darwin }}
-  #!/usr/bin/env zsh
+{{- if .is_darwin -}}
+#!/usr/bin/env sh
 
-  echo "Installing applications from Homebrew..."
+echo "Installing applications from Homebrew..."
 
-  brew install git curl htop tmux fzf
-{{ else if .is_debian_like }}
-  #!/usr/bin/env sh
+brew install curl htop tmux fzf
+{{- else if .is_debian_like -}}
+#!/usr/bin/env sh
 
-  echo "Installing applications from APT..."
+echo "Installing applications from APT..."
 
-  sudo apt-get update
-  sudo apt-get install -y git curl htop tmux fzf
+sudo apt-get update
+sudo apt-get install -y curl htop tmux fzf
 {{- end -}}

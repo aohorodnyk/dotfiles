@@ -9,6 +9,7 @@ I use [chezmoi](https://chezmoi.io/) to manage my dotfiles, it helps to keep eve
 ### MacOS
 
 For MacOS I use [Homebrew](https://brew.sh/) to install all the applications.
+And all scripts use Homebrew to install apps.
 ```bash
 brew install chezmoi
 ```
@@ -24,11 +25,3 @@ chezmoi init git@github.com:aohorodnyk/dotfiles.git
 ```bash
 chezmoi apply
 ```
-
-
-# List of useful applications
-
-- [Ghostty](https://ghostty.org/) - Terminal
-- [Zed](https://zed.dev/) - Code editor
-- [Visual Studio Code](https://code.visualstudio.com/) - Code editor
-- [Yaak](https://yaak.app/) - API client
