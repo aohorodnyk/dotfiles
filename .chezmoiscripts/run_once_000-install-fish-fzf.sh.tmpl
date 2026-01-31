@@ -1,0 +1,20 @@
+{{- if or .is_linux .is_darwin -}}
+#!/usr/bin/env fish
+
+echo "Installing dependencies for fish fzf..."
+
+{{ if .is_darwin }}
+echo "Installing applications from Homebrew..."
+
+brew install fzf bat fd
+{{ else if .is_debian_like }}
+echo "Installing applications from APT..."
+
+sudo apt update
+sudo apt install -y bat fzf fd-find
+{{ end }}
+
+echo "Installing fish fzf..."
+
+fisher install PatrickF1/fzf.fish
+{{- end -}}

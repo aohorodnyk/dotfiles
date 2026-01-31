@@ -1,7 +1,7 @@
 {{- if .is_darwin -}}
 #!/usr/bin/env sh
 
-echo "Installing applications from Homebrew..."
+echo "Installing fish from Homebrew..."
 
 brew install fish
 {{- else if .is_debian_like -}}
