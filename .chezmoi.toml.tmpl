@@ -1,0 +1,29 @@
+{{- /* Initialize variables to false */ -}}
+{{- $isDebianLike := false -}}
+{{- $isDarwin := false -}}
+{{- $isWindows := false -}}
+{{- $isLinux := false -}}
+
+{{- /* Detect OS and set flags */ -}}
+{{- if eq .chezmoi.os "linux" -}}
+    {{- $isLinux = true -}}
+
+    {{- /* Linux: Check for Debian/Ubuntu derivatives */ -}}
+    {{- $osId := .chezmoi.osRelease.id | default "" -}}
+    {{- $idLike := .chezmoi.osRelease.idLike | default "" -}}
+    {{- if or (eq $osId "debian") (eq $osId "ubuntu") (contains "debian" $idLike) (contains "ubuntu" $idLike) -}}
+        {{- $isDebianLike = true -}}
+    {{- end -}}
+{{- else if eq .chezmoi.os "darwin" -}}
+    {{- /* MacOS */ -}}
+    {{- $isDarwin = true -}}
+{{- else if eq .chezmoi.os "windows" -}}
+    {{- /* Windows */ -}}
+    {{- $isWindows = true -}}
+{{- end -}}
+
+[data]
+is_linux = {{ $isLinux }}
+is_debian_like = {{ $isDebianLike }}
+is_darwin = {{ $isDarwin }}
+is_windows = {{ $isWindows }}

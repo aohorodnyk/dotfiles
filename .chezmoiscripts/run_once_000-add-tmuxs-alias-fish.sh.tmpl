@@ -1,0 +1,7 @@
+{{- if or .is_linux .is_darwin -}}
+#!/usr/bin/env fish
+
+echo "Adding a 'tmuxs' alias that creates or attaches to a session name..."
+
+alias --save tmuxs "tmux new-session -A -s"
+{{- end -}}

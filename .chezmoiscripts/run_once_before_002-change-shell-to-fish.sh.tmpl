@@ -1,0 +1,11 @@
+{{- if or .is_linux .is_darwin -}}
+#!/usr/bin/env sh
+
+FISH_SHELL_PATH=$(command -v fish)
+
+if ! grep -qx "$FISH_SHELL_PATH" /etc/shells 2>/dev/null; then
+  echo "$FISH_SHELL_PATH" | sudo tee -a /etc/shells
+fi
+
+chsh -s "$FISH_SHELL_PATH"
+{{- end -}}

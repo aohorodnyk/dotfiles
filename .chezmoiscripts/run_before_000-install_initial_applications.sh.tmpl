@@ -1,0 +1,14 @@
+{{- if .is_darwin -}}
+#!/usr/bin/env sh
+
+echo "Installing applications from Homebrew..."
+
+brew install curl htop tmux
+{{- else if .is_debian_like -}}
+#!/usr/bin/env sh
+
+echo "Installing applications from APT..."
+
+sudo apt-get update
+sudo apt-get install -y curl htop tmux
+{{- end -}}
