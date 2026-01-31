@@ -1,16 +1,11 @@
-{{- if .is_darwin -}}
+{{- if or .is_linux .is_darwin -}}
 #!/usr/bin/env sh
 
-echo "Changing shell to fish..."
+FISH_SHELL_PATH=$(command -v fish)
 
-FISH_SHELL_PATH=$(which fish)
+if ! grep -qx "$FISH_SHELL_PATH" /etc/shells 2>/dev/null; then
+  echo "$FISH_SHELL_PATH" | sudo tee -a /etc/shells
+fi
 
-echo $FISH_SHELL_PATH | sudo tee -a /etc/shells
-chsh -s $FISH_SHELL_PATH
-{{- else if .is_linux -}}
-#!/usr/bin/env sh
-
-echo "Changing shell to fish..."
-
-chsh -s $(which fish)
+chsh -s "$FISH_SHELL_PATH"
 {{- end -}}

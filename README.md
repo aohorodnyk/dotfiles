@@ -9,7 +9,7 @@ I use [chezmoi](https://chezmoi.io/) to manage my dotfiles, it helps to keep eve
 ### MacOS
 
 For MacOS I use [Homebrew](https://brew.sh/) to install all the applications.
-And all scripts use Homebrew to install apps.
+n each supported platform, the scripts use the native package manager (Homebrew on macOS, APT on Debian-based Linux) to install applications.
 ```bash
 brew install chezmoi
 ```
