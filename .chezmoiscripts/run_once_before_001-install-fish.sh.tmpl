@@ -1,0 +1,15 @@
+{{ if .is_darwin }}
+  #!/usr/bin/env zsh
+
+  echo "Installing applications from Homebrew..."
+  
+  brew install fish fisher
+{{ else if .is_debian_like }}
+  #!/usr/bin/env sh
+
+  echo "Installing fish from APT PPA..."
+
+    sudo add-apt-repository ppa:fish-shell/release-4
+    sudo apt update
+    sudo apt install -y fish 
+{{- end -}}
