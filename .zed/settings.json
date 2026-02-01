@@ -1,0 +1,6 @@
+{
+  "file_types": {
+    "TOML": ["*.toml.tmpl"],
+    "Shell Script": ["*.sh.tmpl"],
+  },
+}
