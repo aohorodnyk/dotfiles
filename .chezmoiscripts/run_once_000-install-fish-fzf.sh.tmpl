@@ -10,8 +10,8 @@ brew install fzf bat fd
 {{ else if .is_debian_like }}
 echo "Installing applications from APT..."
 
-sudo apt update
-sudo apt install -y bat fzf fd-find
+sudo apt-get update
+sudo apt-get install -y bat fzf fd-find
 {{ end }}
 
 echo "Installing fish fzf..."
