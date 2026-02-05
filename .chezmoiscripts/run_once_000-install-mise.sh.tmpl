@@ -20,4 +20,12 @@ sudo apt-get update
 sudo apt-get install -y mise
 
 echo 'mise activate fish | source' > ~/.config/fish/conf.d/mise.fish
+{{- else if .is_arch_like -}}
+#!/usr/bin/env bash
+
+echo "Installing mise from APT..."
+
+sudo pacman -S --noconfirm mise
+
+echo 'mise activate fish | source' > ~/.config/fish/conf.d/mise.fish
 {{- end -}}

@@ -3,17 +3,21 @@
 {{- $isDarwin := false -}}
 {{- $isWindows := false -}}
 {{- $isLinux := false -}}
+{{- $isArchLike := false -}}
 
 {{- /* Detect OS and set flags */ -}}
 {{- if eq .chezmoi.os "linux" -}}
     {{- $isLinux = true -}}
 
     {{- /* Linux: Check for Debian/Ubuntu derivatives */ -}}
-    {{- $osId := .chezmoi.osRelease.id | default "" -}}
-    {{- $idLike := .chezmoi.osRelease.idLike | default "" -}}
+    {{- $osId := index .chezmoi.osRelease "id" | default "" -}}
+    {{- $idLike := index .chezmoi.osRelease "idLike" | default "" -}}
     {{- if or (eq $osId "debian") (eq $osId "ubuntu") (contains "debian" $idLike) (contains "ubuntu" $idLike) -}}
-        {{- $isDebianLike = true -}}
+      {{- $isDebianLike = true -}}
     {{- end -}}
+    {{ if or (eq $osId "arch") (contains "arch" $idLike) }}
+      {{- $isArchLike = true -}}
+    {{ end   }}
 {{- else if eq .chezmoi.os "darwin" -}}
     {{- /* MacOS */ -}}
     {{- $isDarwin = true -}}
@@ -25,5 +29,6 @@
 [data]
 is_linux = {{ $isLinux }}
 is_debian_like = {{ $isDebianLike }}
+is_arch_like = {{ $isArchLike }}
 is_darwin = {{ $isDarwin }}
 is_windows = {{ $isWindows }}

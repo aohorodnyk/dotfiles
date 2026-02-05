@@ -12,6 +12,10 @@ echo "Installing applications from APT..."
 
 sudo apt-get update
 sudo apt-get install -y bat fzf fd-find
+{{- else if .is_arch_like -}}
+echo "Installing applications from Pacman..."
+
+sudo pacman -S --noconfirm bat fzf fd
 {{ end }}
 
 echo "Installing fish fzf..."

@@ -1,7 +1,17 @@
-{{- if or .is_linux .is_darwin -}}
-#!/usr/bin/env fish
+{{- if .is_darwin -}}
+#!/usr/bin/env bash
 
-echo "Installing fisher..."
+echo "Instaliing fisher from Homebrew"
+
+brew install fisher
+{{- else if .is_arch_like -}}
+#!/usr/bin/env bash
+
+echo "Installing fisher from Pacman..."
+
+sudo pacman -S --noconfirm fisher
+{{- else if .is_linux -}}
+#!/usr/bin/env bash
 
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 {{- end -}}
