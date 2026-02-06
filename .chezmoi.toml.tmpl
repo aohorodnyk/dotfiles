@@ -6,20 +6,20 @@
 
 {{- /* Detect OS and set flags */ -}}
 {{- if eq .chezmoi.os "linux" -}}
-    {{- $isLinux = true -}}
+  {{- $isLinux = true -}}
 
-    {{- /* Linux: Check for Debian/Ubuntu derivatives */ -}}
-    {{- $osId := index .chezmoi.osRelease "id" | default "" -}}
-    {{- $idLike := index .chezmoi.osRelease "idLike" | default "" -}}
-    {{ if or (eq $osId "arch") (eq $idLike "arch") }}
-      {{- $isArchLike = true -}}
-    {{ end   }}
+  {{- /* Linux: Check for Debian/Ubuntu derivatives */ -}}
+  {{- $osId := index .chezmoi.osRelease "id" | default "" -}}
+  {{- $idLike := index .chezmoi.osRelease "idLike" | default "" -}}
+  {{ if or (eq $osId "arch") (eq $idLike "arch") }}
+    {{- $isArchLike = true -}}
+  {{ end   }}
 {{- else if eq .chezmoi.os "darwin" -}}
-    {{- /* MacOS */ -}}
-    {{- $isDarwin = true -}}
+  {{- /* MacOS */ -}}
+  {{- $isDarwin = true -}}
 {{- else if eq .chezmoi.os "windows" -}}
-    {{- /* Windows */ -}}
-    {{- $isWindows = true -}}
+  {{- /* Windows */ -}}
+  {{- $isWindows = true -}}
 {{- end -}}
 
 [data]
