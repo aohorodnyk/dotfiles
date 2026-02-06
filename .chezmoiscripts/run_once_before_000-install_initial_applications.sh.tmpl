@@ -4,13 +4,6 @@
 echo "Installing applications from Homebrew..."
 
 brew install curl htop tmux
-{{- else if .is_debian_like -}}
-#!/usr/bin/env bash
-
-echo "Installing applications from APT..."
-
-sudo apt-get update
-sudo apt-get install -y curl htop tmux
 {{- else if .is_arch_like -}}
 #!/usr/bin/env bash
 

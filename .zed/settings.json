@@ -3,4 +3,7 @@
     "TOML": ["*.toml.tmpl"],
     "Shell Script": ["*.sh.tmpl"],
   },
+  "auto_install_extensions": {
+    "toml": true,
+  },
 }

@@ -7,11 +7,6 @@ echo "Installing dependencies for fish fzf..."
 echo "Installing applications from Homebrew..."
 
 brew install fzf bat fd
-{{ else if .is_debian_like }}
-echo "Installing applications from APT..."
-
-sudo apt-get update
-sudo apt-get install -y bat fzf fd-find
 {{- else if .is_arch_like -}}
 echo "Installing applications from Pacman..."
 

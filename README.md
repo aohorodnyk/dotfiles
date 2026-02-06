@@ -19,7 +19,7 @@ brew install chezmoi
 I also add configurations for Linux, but since there are many distribution, my the current one is Linux Mint.
 All the parts related to installing packages and configuring them are based on `apt-get` and ubuntu PPAs.
 
-There are variables that specify a **Debian/Ubuntu-based distributions** and **Linux** in general, as well as **Windows** and **MacOS/Darwin**, it means that it should be safe to run it everywhere, but some parts could be skipped or do not work at all in your environment.
+There are variables that specify a **Arch Linux** and **Linux** in general, as well as **Windows** and **MacOS/Darwin**, it means that it should be safe to run it everywhere, but some parts could be skipped or do not work at all in your environment.
 
 ### Init chezmoi
 

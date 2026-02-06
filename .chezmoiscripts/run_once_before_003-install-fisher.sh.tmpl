@@ -10,8 +10,4 @@ brew install fisher
 echo "Installing fisher from Pacman..."
 
 sudo pacman -S --noconfirm fisher
-{{- else if .is_linux -}}
-#!/usr/bin/env bash
-
-curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 {{- end -}}
