@@ -1,0 +1,18 @@
+
+{{- if .is_darwin -}}
+#!/usr/bin/env fish
+
+echo "Installing zoxide from Homebrew..."
+
+brew install zoxide
+
+echo 'zoxide init fish | source' > ~/.config/fish/conf.d/zoxide.fish
+{{- else if .is_arch_like -}}
+#!/usr/bin/env bash
+
+echo "Installing zoxide from APT..."
+
+sudo pacman -S --noconfirm zoxide
+
+echo 'zoxide init fish | source' > ~/.config/fish/conf.d/zoxide.fish
+{{- end -}}
